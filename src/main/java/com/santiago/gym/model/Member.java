@@ -11,6 +11,8 @@ public class Member {
 
     @Column(name = "first_name", nullable = false)
     private String firstName;
+    @Column(name = "last_name", nullable = false)
+    private String lastName;
 
     @Column(name = "dni", nullable = false, unique = true)
     private String dni;
@@ -21,6 +23,7 @@ public class Member {
     public Member(){}
     public Member(String firstName, String dni){
         this.firstName = firstName;
+        this.lastName = lastName;
         this.dni = dni;
         this.active = true;
     }
@@ -30,6 +33,9 @@ public class Member {
 
     public String getFirstName(){ return firstName; }
     public void setFirstName(String firstName){ this.firstName = firstName; }
+
+    public String getLastName() { return lastName; }
+    public void setLastName(String lastName) { this.lastName = lastName; }
 
     public String getDni() { return dni; }
     public void setDni(String dni) { this.dni = dni; }
