@@ -1,4 +1,4 @@
-package com.santiago.gym.model;
+package com.ValhallaCode.gym.model;
 
 import jakarta.persistence.*;
 
