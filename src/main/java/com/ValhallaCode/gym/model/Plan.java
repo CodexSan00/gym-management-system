@@ -5,7 +5,7 @@ import jakarta.persistence.*;
 import java.math.BigDecimal;
 
 @Entity
-@Table(name = "plains")
+@Table(name = "plans")
 public class Plan {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -25,6 +25,11 @@ public class Plan {
         this.name = name;
         this.price = price;
         this.duration_days = duration_days;
+    }
+
+    public Long getId() { return id; }
+    public void setId(Long id) {
+        this.id = id;
     }
 
     public String getName() { return name; }
