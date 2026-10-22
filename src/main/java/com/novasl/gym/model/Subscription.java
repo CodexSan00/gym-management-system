@@ -1,4 +1,4 @@
-package com.valhallacode.gym.model;
+package com.novasl.gym.model;
 
 import jakarta.persistence.*;
 import java.math.BigDecimal;
